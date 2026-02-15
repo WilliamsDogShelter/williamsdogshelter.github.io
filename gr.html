@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>William's Dog Shelter - Καταφύγιο Σκύλων στην Κύπρο | 350+ Σκύλοι Ψάχνουν Σπίτι</title>
+    <meta name="description" content="Καταφύγιο αδέσποτων σκύλων William's Dog Shelter στο Παρεκκλησιά, Λεμεσός, Κύπρος. Πάνω από 350 σκύλοι ψάχνουν για μια αγαπημένη οικογένεια.">
+    <meta name="keywords" content="καταφύγιο σκύλων Κύπρος, σκύλοι Λεμεσός, υιοθεσία σκύλου Κύπρος, αδέσποτοι σκύλοι, William's Dog Shelter, καταφύγιο ζώων Παρεκκλησιά">
+    <meta name="author" content="William's Dog Shelter">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://williamsshelter.com/gr">
+    <meta property="og:title" content="William's Dog Shelter - Καταφύγιο Σκύλων στην Κύπρο">
+    <meta property="og:description" content="Πάνω από 350 σκύλοι στο καταφύγιο ψάχνουν για ένα αγαπημένο σπίτι.">
+    <meta property="og:image" content="https://williamsshelter.com/images/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://williamsshelter.com/gr">
+    <meta property="twitter:title" content="William's Dog Shelter - Καταφύγιο Σκύλων στην Κύπρο">
+    <meta property="twitter:description" content="Πάνω από 350 σκύλοι ψάχνουν για ένα αγαπημένο σπίτι">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://williamsshelter.com/gr">
+    
+    <!-- Alternate Languages -->
+    <link rel="alternate" hreflang="ru" href="https://williamsshelter.com/">
+    <link rel="alternate" hreflang="en" href="https://williamsshelter.com/en">
+    <link rel="alternate" hreflang="el" href="https://williamsshelter.com/gr">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AnimalShelter",
+      "name": "William's Dog Shelter",
+      "image": "https://williamsshelter.com/images/logo.jpg",
+      "description": "Καταφύγιο για αδέσποτους σκύλους στο Παρεκκλησιά, Κύπρος",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Παρεκκλησιά",
+        "addressLocality": "Λεμεσός",
+        "addressCountry": "CY"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "34.7",
+        "longitude": "33.3"
+      },
+      "url": "https://williamsshelter.com/gr",
+      "telephone": "",
+      "email": "Williams.dog.shelter5@gmail.com",
+      "sameAs": [
+        "https://www.instagram.com/williams_dog_shelter"
+      ]
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary: #8b6f47;
+            --accent: #ff5722;
+            --dark: #2a2a2a;
+            --light: #f8f6f3;
+            --white: #ffffff;
+        }
+        
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            color: var(--dark);
+            background: var(--white);
+            line-height: 1.7;
+        }
+        
+        nav {
+            background: var(--white);
+            padding: 1.5rem 2.5rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.4rem;
+            font-weight: 400;
+            color: var(--primary);
+            font-style: italic;
+        }
+        
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+        
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2.5rem;
+        }
+        
+        .nav-menu a {
+            color: var(--dark);
+            text-decoration: none;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.3s;
+        }
+        
+        .nav-menu a:hover {
+            color: var(--primary);
+        }
+        
+        .lang-switcher {
+            display: flex;
+            gap: 0.5rem;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 0.9rem;
+        }
+        
+        .lang-switcher a {
+            color: #999;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .lang-switcher a.active {
+            color: var(--primary);
+            font-weight: 700;
+        }
+        
+        .lang-switcher a:hover {
+            color: var(--primary);
+        }
+        
+        .dogs-catalog {
+            padding: 4rem 2.5rem;
+            background: var(--light);
+        }
+        
+        .catalog-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .catalog-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .catalog-header h1 {
+            font-size: 3.5rem;
+            font-weight: 400;
+            margin-bottom: 1rem;
+        }
+        
+        .catalog-header p {
+            font-size: 1.2rem;
+            color: #666;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+        
+        .dogs-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+        }
+        
+        .dog-card {
+            background: var(--white);
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .dog-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+        
+        .dog-image {
+            height: 280px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .dog-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .dog-card:hover .dog-image img {
+            transform: scale(1.05);
+        }
+        
+        .size-badge {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background: var(--accent);
+            color: white;
+            padding: 0.5rem 1.2rem;
+            border-radius: 30px;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            font-weight: 800;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .dog-content {
+            padding: 1.5rem;
+        }
+        
+        .dog-number {
+            color: var(--accent);
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            font-weight: 700;
+            font-size: 0.85rem;
+            margin-bottom: 0.4rem;
+        }
+        
+        .dog-content h3 {
+            font-size: 1.6rem;
+            font-weight: 400;
+            margin-bottom: 0.8rem;
+        }
+        
+        .dog-meta {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 0.85rem;
+            color: #666;
+            flex-wrap: wrap;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+        
+        .dog-content p {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 0.8rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        
+        .dog-time {
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 0.8rem;
+            color: #999;
+        }
+        
+        .about-section {
+            padding: 7rem 2.5rem;
+            background: var(--white);
+        }
+        
+        .about-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .about-container h2 {
+            font-size: 3.5rem;
+            font-weight: 400;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .about-text p {
+            font-size: 1.2rem;
+            line-height: 2;
+            margin-bottom: 2rem;
+            color: #555;
+        }
+        
+        .about-text p:first-of-type::first-letter {
+            font-size: 5rem;
+            float: left;
+            line-height: 0.9;
+            margin-right: 0.15rem;
+            margin-top: 0.1rem;
+            color: var(--primary);
+            font-weight: 400;
+        }
+        
+        .program-section {
+            padding: 7rem 2.5rem;
+            background: var(--primary);
+            color: var(--white);
+        }
+        
+        .program-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .program-container h2 {
+            font-size: 3.5rem;
+            font-weight: 400;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        
+        .program-subtitle {
+            text-align: center;
+            font-size: 1.3rem;
+            margin-bottom: 4rem;
+            opacity: 0.95;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+        
+        .program-steps {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2.5rem;
+        }
+        
+        .program-step {
+            padding: 2rem 0;
+            border-top: 2px solid rgba(255,255,255,0.3);
+        }
+        
+        .step-number {
+            font-size: 1.2rem;
+            opacity: 0.5;
+            margin-bottom: 1rem;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+        
+        .program-step h3 {
+            font-size: 1.8rem;
+            font-weight: 400;
+            margin-bottom: 1rem;
+        }
+        
+        .program-step p {
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 1rem;
+            line-height: 1.7;
+            opacity: 0.9;
+        }
+        
+        .help-section {
+            padding: 7rem 2.5rem;
+            background: var(--light);
+        }
+        
+        .help-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .help-container h2 {
+            font-size: 3.5rem;
+            font-weight: 400;
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        
+        .help-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+        
+        .help-card {
+            background: var(--white);
+            padding: 3rem 2.5rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .help-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+        
+        .help-card h3 {
+            font-size: 2rem;
+            font-weight: 400;
+            margin-bottom: 1.5rem;
+        }
+        
+        .help-card p {
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 1rem;
+            line-height: 1.7;
+            color: #666;
+            margin-bottom: 2rem;
+        }
+        
+        .help-btn {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: var(--primary);
+            color: var(--white);
+            text-decoration: none;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        
+        .help-btn:hover {
+            background: #6f5638;
+        }
+        
+        .contact-section {
+            padding: 7rem 2.5rem;
+            background: var(--white);
+        }
+        
+        .contact-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .contact-container h2 {
+            font-size: 3.5rem;
+            font-weight: 400;
+            margin-bottom: 3rem;
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 4rem;
+            margin-bottom: 4rem;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        
+        .contact-item {
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .contact-item h4 {
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 0.85rem;
+            color: #999;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+        
+        .contact-item p {
+            font-size: 1.2rem;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            font-weight: 500;
+        }
+        
+        .map-container {
+            height: 500px;
+            background: #e0e0e0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+        
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+        }
+        
+        footer {
+            background: var(--dark);
+            color: var(--white);
+            padding: 3rem 2.5rem;
+            text-align: center;
+        }
+        
+        footer p {
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            opacity: 0.7;
+            margin-bottom: 0.5rem;
+        }
+        
+        @media (max-width: 1200px) {
+            .dogs-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        
+        @media (max-width: 1024px) {
+            .dogs-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .program-steps {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .help-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+            
+            .catalog-header h1 {
+                font-size: 2.5rem;
+            }
+            
+            .dogs-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .about-container h2,
+            .program-container h2,
+            .help-container h2,
+            .contact-container h2 {
+                font-size: 2.5rem;
+            }
+            
+            .program-steps {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">William's Dog Shelter</div>
+            <div class="nav-right">
+                <ul class="nav-menu">
+                    <li><a href="#dogs">Οι σκύλοι μας</a></li>
+                    <li><a href="#about">Σχετικά με εμάς</a></li>
+                    <li><a href="#program">Πρόγραμμα</a></li>
+                    <li><a href="#help">Υποστήριξη</a></li>
+                    <li><a href="#contact">Επικοινωνία</a></li>
+                </ul>
+                <div class="lang-switcher">
+                    <a href="/">RU</a>
+                    <span>|</span>
+                    <a href="/en">EN</a>
+                    <span>|</span>
+                    <a href="/gr" class="active">GR</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="dogs-catalog" id="dogs">
+        <div class="catalog-container">
+            <div class="catalog-header">
+                <h1>Οι σκύλοι μας</h1>
+                <p>Πάνω από 350 σκύλοι στο καταφύγιο ψάχνουν για ένα αγαπημένο σπίτι</p>
+            </div>
+            
+            <div class="dogs-grid">
+                <div class="dog-card">
+                    <div class="dog-image">
+                        <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=600" alt="Ρεξ - σκύλος από το καταφύγιο">
+                        <div class="size-badge">ΜΕΓΑΛΟΣ</div>
+                    </div>
+                    <div class="dog-content">
+                        <div class="dog-number">#001</div>
+                        <h3>Ρεξ</h3>
+                        <div class="dog-meta">
+                            <span class="meta-item">Λαμπραντόρ</span>
+                            <span class="meta-item">♂ Αρσενικό</span>
+                            <span class="meta-item">3 χρόνια</span>
+                        </div>
+                        <p>Απίστευτα καλός και ενεργητικός σκύλος που λατρεύει να παίζει και να περνά χρόνο έξω. Τα πάει υπέροχα με παιδιά και άλλους σκύλους.</p>
+                        <div class="dog-time">Στο καταφύγιο: 4 μήνες</div>
+                    </div>
+                </div>
+
+                <div class="dog-card">
+                    <div class="dog-image">
+                        <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=600" alt="Λούνα - σκύλος από το καταφύγιο">
+                        <div class="size-badge">ΜΕΣΑΙΟΣ</div>
+                    </div>
+                    <div class="dog-content">
+                        <div class="dog-number">#002</div>
+                        <h3>Λούνα</h3>
+                        <div class="dog-meta">
+                            <span class="meta-item">Χάσκι</span>
+                            <span class="meta-item">♀ Θηλυκό</span>
+                            <span class="meta-item">2 χρόνια</span>
+                        </div>
+                        <p>Όμορφος και έξυπνος σκύλος με απίστευτα μπλε μάτια. Πολύ στοργικός και πιστός. Ιδανικός για ενεργούς ιδιοκτήτες.</p>
+                        <div class="dog-time">Στο καταφύγιο: 2 μήνες</div>
+                    </div>
+                </div>
+
+                <div class="dog-card">
+                    <div class="dog-image">
+                        <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?w=600" alt="Μαξ - σκύλος από το καταφύγιο">
+                        <div class="size-badge">ΜΕΓΑΛΟΣ</div>
+                    </div>
+                    <div class="dog-content">
+                        <div class="dog-number">#003</div>
+                        <h3>Μαξ</h3>
+                        <div class="dog-meta">
+                            <span class="meta-item">Γερμανικός Ποιμενικός</span>
+                            <span class="meta-item">♂ Αρσενικό</span>
+                            <span class="meta-item">4 χρόνια</span>
+                        </div>
+                        <p>Έξυπνος και υπάκουος σκύλος με βασική εκπαίδευση. Ιδανικός σύντροφος και αξιόπιστος φίλος της οικογένειας. Τα πάει υπέροχα με παιδιά.</p>
+                        <div class="dog-time">Στο καταφύγιο: 6 μήνες</div>
+                    </div>
+                </div>
+
+                <div class="dog-card">
+                    <div class="dog-image">
+                        <img src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=600" alt="Μπέλλα - σκύλος από το καταφύγιο">
+                        <div class="size-badge">ΜΙΚΡΟΣ</div>
+                    </div>
+                    <div class="dog-content">
+                        <div class="dog-number">#004</div>
+                        <h3>Μπέλλα</h3>
+                        <div class="dog-meta">
+                            <span class="meta-item">Μικτή φυλή</span>
+                            <span class="meta-item">♀ Θηλυκό</span>
+                            <span class="meta-item">1 χρόνο</span>
+                        </div>
+                        <p>Γλυκιά και παιχνιδιάρα μικρή γεμάτη ενέργεια και αγάπη. Ιδανική για διαμέρισμα. Τα πάει καλά με άλλα ζώα.</p>
+                        <div class="dog-time">Στο καταφύγιο: 3 μήνες</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section" id="about">
+        <div class="about-container">
+            <h2>Σχετικά με το καταφύγιο</h2>
+            <div class="about-text">
+                <p>Είμαστε μια ομάδα εθελοντών για τους οποίους η διάσωση αδέσποτων σκύλων έχει γίνει έργο ζωής. Το καταφύγιό μας στο χωριό Παρεκκλησιά κοντά στη Λεμεσό δεν είναι απλώς ένα προσωρινό μέρος, είναι ένα σπίτι όπου κάθε σκύλος λαμβάνει αγάπη και φροντίδα.</p>
+                <p>Κάθε μέρα ταΐζουμε, θεραπεύουμε και κοινωνικοποιούμε τους ένοικούς μας, προετοιμάζοντάς τους να συναντήσουν τις νέες τους οικογένειες. Πιστεύουμε ότι κάθε σκύλος αξίζει μια δεύτερη ευκαιρία για μια ευτυχισμένη ζωή.</p>
+                <p>Το καταφύγιο υπάρχει χάρη στην υποστήριξη ανθρώπων και εταιρειών που νοιάζονται. Κάθε δωρεά, κάθε ώρα εθελοντικής εργασίας φέρνει τους σκύλους μας πιο κοντά στο όνειρό τους να βρουν ένα αγαπημένο σπίτι.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="program-section" id="program">
+        <div class="program-container">
+            <h2>From Shelter to Home</h2>
+            <p class="program-subtitle">Φιλανθρωπικό πρόγραμμα εθελοντών</p>
+            <div class="program-steps">
+                <div class="program-step">
+                    <div class="step-number">Βήμα 01</div>
+                    <h3>Επιλέξτε έναν σκύλο</h3>
+                    <p>Περιηγηθείτε στον κατάλογο και χορηγήστε έναν ή περισσότερους σκύλους. Γίνετε ο προσωρινός μέντοράς τους και φίλος στο δρόμο για ένα νέο σπίτι.</p>
+                </div>
+                <div class="program-step">
+                    <div class="step-number">Βήμα 02</div>
+                    <h3>Περάστε χρόνο μαζί</h3>
+                    <p>Επισκεφθείτε το καταφύγιο 1-2 φορές την εβδομάδα για περπάτημα, παιχνίδια και κοινωνικοποίηση. Η αλληλεπίδρασή σας βοηθά τους σκύλους να προσαρμοστούν στην οικογενειακή ζωή.</p>
+                </div>
+                <div class="program-step">
+                    <div class="step-number">Βήμα 03</div>
+                    <h3>Πείτε την ιστορία τους</h3>
+                    <p>Μοιραστείτε φωτογραφίες και βίντεο του σκύλου που χορηγείτε στα μέσα κοινωνικής δικτύωσης. Μιλήστε για τον χαρακτήρα, τις συνήθειες και τα όνειρά του. Η φωνή σας θα βοηθήσει να βρεθεί η τέλεια οικογένεια.</p>
+                </div>
+                <div class="program-step">
+                    <div class="step-number">Βήμα 04</div>
+                    <h3>Βοηθήστε να βρεθεί σπίτι</h3>
+                    <p>Χρησιμοποιήστε το δίκτυό σας για να βρείτε μια αγαπημένη οικογένεια για τον σκύλο σας. Γίνετε ο σύνδεσμος μεταξύ του καταφυγίου και των νέων ιδιοκτητών.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="help-section" id="help">
+        <div class="help-container">
+            <h2>Υποστήριξη</h2>
+            <div class="help-grid">
+                <div class="help-card">
+                    <h3>Τροφή για σκύλους</h3>
+                    <p>Βοηθήστε να παρέχετε ποιοτική διατροφή για πάνω από 350 σκύλους που χρειάζονται καθημερινό φαγητό και μια ισορροπημένη δίαιτα.</p>
+                    <a href="https://gogetfunding.com/williams-dog-shelter-dog-food-fundraiser-september-oktober-2025/" class="help-btn" target="_blank" rel="noopener">Υποστήριξη</a>
+                </div>
+                <div class="help-card">
+                    <h3>Κτηνιατρική φροντίδα</h3>
+                    <p>Τακτικοί έλεγχοι, εμβολιασμοί, θεραπείες και στειρώσεις απαιτούν σημαντικά κεφάλαια για τη διατήρηση της υγείας των ενοίκων μας.</p>
+                    <a href="https://gogetfunding.com/dog-vet-fundraiser-september-oktober-2025-williams-dog-shelter/" class="help-btn" target="_blank" rel="noopener">Υποστήριξη</a>
+                </div>
+                <div class="help-card">
+                    <h3>Συντήρηση καταφυγίου</h3>
+                    <p>Συντήρηση καταφυγίου, επισκευές και κατασκευή κλουβιών, κοινόχρηστες υπηρεσίες και καθημερινά λειτουργικά έξοδα.</p>
+                    <a href="https://gogetfunding.com/for-economic-activity-and-maintenance-of-a-dog-shelter-2025/" class="help-btn" target="_blank" rel="noopener">Υποστήριξη</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <div class="contact-container">
+            <h2>Επικοινωνία</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h4>Email</h4>
+                        <p>Williams.dog.shelter5@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <h4>Instagram</h4>
+                        <p><a href="https://www.instagram.com/williams_dog_shelter" target="_blank" rel="noopener" style="color: inherit; text-decoration: none;">@williams_dog_shelter</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <h4>Διεύθυνση</h4>
+                        <p>Παρεκκλησιά, Λεμεσός, Κύπρος</p>
+                    </div>
+                </div>
+                <div>
+                    <h4 style="font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 0.85rem; color: #999; margin-bottom: 1rem;">Πώς να φτάσετε εκεί</h4>
+                    <div class="map-container">
+                        <iframe src="https://maps.app.goo.gl/mZJVbDre4E4p36mXA" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 William's Dog Shelter • williamsshelter.com</p>
+        <p>Καταφύγιο σκύλων • Παρεκκλησιά, Λεμεσός, Κύπρος</p>
+    </footer>
+</body>
+</html>

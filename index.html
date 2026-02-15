@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>William's Dog Shelter - Приют для собак на Кипре | Более 350 собак ищут дом</title>
+    <meta name="description" content="Приют для бездомных собак William's Dog Shelter в Пареклиссии, Лимассол, Кипр. Более 350 собак ищут любящую семью. Помогите найти дом брошенным животным.">
+    <meta name="keywords" content="приют для собак Кипр, собаки Лимассол, усыновить собаку Кипр, бездомные собаки, William's Dog Shelter, приют животных Пареклиссия">
+    <meta name="author" content="William's Dog Shelter">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://williamsshelter.com/">
+    <meta property="og:title" content="William's Dog Shelter - Приют для собак на Кипре">
+    <meta property="og:description" content="Более 350 собак в приюте ищут любящий дом. Помогите бездомным собакам на Кипре найти семью.">
+    <meta property="og:image" content="https://williamsshelter.com/images/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://williamsshelter.com/">
+    <meta property="twitter:title" content="William's Dog Shelter - Приют для собак на Кипре">
+    <meta property="twitter:description" content="Более 350 собак в приюте ищут любящий дом">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://williamsshelter.com/">
+    
+    <!-- Alternate Languages -->
+    <link rel="alternate" hreflang="ru" href="https://williamsshelter.com/">
+    <link rel="alternate" hreflang="en" href="https://williamsshelter.com/en">
+    <link rel="alternate" hreflang="el" href="https://williamsshelter.com/gr">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Structured Data - Organization -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AnimalShelter",
+      "name": "William's Dog Shelter",
+      "image": "https://williamsshelter.com/images/logo.jpg",
+      "description": "Приют для бездомных собак в Пареклиссии, Кипр",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Parekklisia",
+        "addressLocality": "Limassol",
+        "addressCountry": "CY"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "34.7",
+        "longitude": "33.3"
+      },
+      "url": "https://williamsshelter.com",
+      "telephone": "",
+      "email": "Williams.dog.shelter5@gmail.com",
+      "sameAs": [
+        "https://www.instagram.com/williams_dog_shelter"
+      ]
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary: #8b6f47;
+            --accent: #ff5722;
+            --dark: #2a2a2a;
+            --light: #f8f6f3;
+            --white: #ffffff;
+        }
+        
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            color: var(--dark);
+            background: var(--white);
+            line-height: 1.7;
+        }
+        
+        /* Navigation */
+        nav {
+            background: var(--white);
+            padding: 1.5rem 2.5rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.4rem;
+            font-weight: 400;
+            color: var(--primary);
+            font-style: italic;
+        }
+        
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+        
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2.5rem;
+        }
+        
+        .nav-menu a {
+            color: var(--dark);
+            text-decoration: none;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.3s;
+        }
+        
+        .nav-menu a:hover {
+            color: var(--primary);
+        }
+        
+        .lang-switcher {
+            display: flex;
+            gap: 0.5rem;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 0.9rem;
+        }
+        
+        .lang-switcher a {
+            color: #999;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .lang-switcher a.active {
+            color: var(--primary);
+            font-weight: 700;
+        }
+        
+        .lang-switcher a:hover {
+            color: var(--primary);
+        }
+        
+        /* Dogs Catalog Section - 4 cards per screen */
+        .dogs-catalog {
+            padding: 4rem 2.5rem;
+            background: var(--light);
+        }
+        
+        .catalog-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .catalog-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .catalog-header h1 {
+            font-size: 3.5rem;
+            font-weight: 400;
+            margin-bottom: 1rem;
+        }
+        
+        .catalog-header p {
+            font-size: 1.2rem;
+            color: #666;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+        
+        .dogs-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+        }
+        
+        .dogs-grid.all-dogs {
+            /* Показать все собаки */
+        }
+        
+        .show-more-btn {
+            text-align: center;
+            margin-top: 3rem;
+        }
+        
+        .btn-show-all {
+            padding: 1rem 3rem;
+            background: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+        
+        .btn-show-all:hover {
+            background: #6f5638;
+        }
+        
+        .dog-card {
+            background: var(--white);
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .dog-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+        
+        .dog-image {
+            height: 280px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .dog-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .dog-card:hover .dog-image img {
+            transform: scale(1.05);
+        }
+        
+        .size-badge {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background: var(--accent);
+            color: white;
+            padding: 0.5rem 1.2rem;
+            border-radius: 30px;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            font-weight: 800;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .dog-content {
+            padding: 1.5rem;
+        }
+        
+        .dog-number {
+            color: var(--accent);
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            font-weight: 700;
+            font-size: 0.85rem;
+            margin-bottom: 0.4rem;
+        }
+        
+        .dog-content h3 {
+            font-size: 1.6rem;
+            font-weight: 400;
+            margin-bottom: 0.8rem;
+        }
+        
+        .dog-meta {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 0.85rem;
+            color: #666;
+            flex-wrap: wrap;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+        
+        .dog-content p {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 0.8rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        
+        .dog-time {
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 0.8rem;
+            color: #999;
+        }
+        
+        /* About Section */
+        .about-section {
+            padding: 7rem 2.5rem;
+            background: var(--white);
+        }
+        
+        .about-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .about-container h2 {
+            font-size: 3.5rem;
+            font-weight: 400;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .about-text p {
+            font-size: 1.2rem;
+            line-height: 2;
+            margin-bottom: 2rem;
+            color: #555;
+        }
+        
+        .about-text p:first-of-type::first-letter {
+            font-size: 5rem;
+            float: left;
+            line-height: 0.9;
+            margin-right: 0.15rem;
+            margin-top: 0.1rem;
+            color: var(--primary);
+            font-weight: 400;
+        }
+        
+        /* Program Section */
+        .program-section {
+            padding: 7rem 2.5rem;
+            background: var(--primary);
+            color: var(--white);
+        }
+        
+        .program-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .program-container h2 {
+            font-size: 3.5rem;
+            font-weight: 400;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        
+        .program-subtitle {
+            text-align: center;
+            font-size: 1.3rem;
+            margin-bottom: 4rem;
+            opacity: 0.95;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+        
+        .program-steps {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2.5rem;
+        }
+        
+        .program-step {
+            padding: 2rem 0;
+            border-top: 2px solid rgba(255,255,255,0.3);
+        }
+        
+        .step-number {
+            font-size: 1.2rem;
+            opacity: 0.5;
+            margin-bottom: 1rem;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+        
+        .program-step h3 {
+            font-size: 1.8rem;
+            font-weight: 400;
+            margin-bottom: 1rem;
+        }
+        
+        .program-step p {
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 1rem;
+            line-height: 1.7;
+            opacity: 0.9;
+        }
+        
+        /* Help Section */
+        .help-section {
+            padding: 7rem 2.5rem;
+            background: var(--light);
+        }
+        
+        .help-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .help-container h2 {
+            font-size: 3.5rem;
+            font-weight: 400;
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        
+        .help-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+        
+        .help-card {
+            background: var(--white);
+            padding: 3rem 2.5rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .help-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+        
+        .help-card h3 {
+            font-size: 2rem;
+            font-weight: 400;
+            margin-bottom: 1.5rem;
+        }
+        
+        .help-card p {
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 1rem;
+            line-height: 1.7;
+            color: #666;
+            margin-bottom: 2rem;
+        }
+        
+        .help-btn {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: var(--primary);
+            color: var(--white);
+            text-decoration: none;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        
+        .help-btn:hover {
+            background: #6f5638;
+        }
+        
+        /* Contact Section */
+        .contact-section {
+            padding: 7rem 2.5rem;
+            background: var(--white);
+        }
+        
+        .contact-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .contact-container h2 {
+            font-size: 3.5rem;
+            font-weight: 400;
+            margin-bottom: 3rem;
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 4rem;
+            margin-bottom: 4rem;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        
+        .contact-item {
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .contact-item h4 {
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 0.85rem;
+            color: #999;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+        
+        .contact-item p {
+            font-size: 1.2rem;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            font-weight: 500;
+        }
+        
+        .map-container {
+            height: 500px;
+            background: #e0e0e0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+        
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: var(--white);
+            padding: 3rem 2.5rem;
+            text-align: center;
+        }
+        
+        footer p {
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            opacity: 0.7;
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Responsive */
+        @media (max-width: 1200px) {
+            .dogs-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        
+        @media (max-width: 1024px) {
+            .dogs-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .program-steps {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .help-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+            
+            .catalog-header h1 {
+                font-size: 2.5rem;
+            }
+            
+            .dogs-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .about-container h2,
+            .program-container h2,
+            .help-container h2,
+            .contact-container h2 {
+                font-size: 2.5rem;
+            }
+            
+            .program-steps {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">William's Dog Shelter</div>
+            <div class="nav-right">
+                <ul class="nav-menu">
+                    <li><a href="#dogs">Наши собаки</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#program">Программа</a></li>
+                    <li><a href="#help">Помощь</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+                <div class="lang-switcher">
+                    <a href="/" class="active">RU</a>
+                    <span>|</span>
+                    <a href="/en">EN</a>
+                    <span>|</span>
+                    <a href="/gr">GR</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="dogs-catalog" id="dogs">
+        <div class="catalog-container">
+            <div class="catalog-header">
+                <h1>Наши собаки</h1>
+                <p>Более 350 собак в приюте ищут любящий дом</p>
+            </div>
+            
+            <div class="dogs-grid">
+                <div class="dog-card">
+                    <div class="dog-image">
+                        <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=600" alt="Рекс - собака из приюта">
+                        <div class="size-badge">КРУПНАЯ</div>
+                    </div>
+                    <div class="dog-content">
+                        <div class="dog-number">#001</div>
+                        <h3>Рекс</h3>
+                        <div class="dog-meta">
+                            <span class="meta-item">Лабрадор</span>
+                            <span class="meta-item">♂ Самец</span>
+                            <span class="meta-item">3 года</span>
+                        </div>
+                        <p>Невероятно добрый и энергичный пёс, который обожает играть и проводить время на свежем воздухе. Прекрасно ладит с детьми и другими собаками.</p>
+                        <div class="dog-time">В приюте: 4 месяца</div>
+                    </div>
+                </div>
+
+                <div class="dog-card">
+                    <div class="dog-image">
+                        <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=600" alt="Луна - собака из приюта">
+                        <div class="size-badge">СРЕДНЯЯ</div>
+                    </div>
+                    <div class="dog-content">
+                        <div class="dog-number">#002</div>
+                        <h3>Луна</h3>
+                        <div class="dog-meta">
+                            <span class="meta-item">Хаски</span>
+                            <span class="meta-item">♀ Самка</span>
+                            <span class="meta-item">2 года</span>
+                        </div>
+                        <p>Красивая и умная собака с невероятными голубыми глазами. Очень ласковая и преданная. Отлично подойдёт для активных владельцев.</p>
+                        <div class="dog-time">В приюте: 2 месяца</div>
+                    </div>
+                </div>
+
+                <div class="dog-card">
+                    <div class="dog-image">
+                        <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?w=600" alt="Макс - собака из приюта">
+                        <div class="size-badge">КРУПНАЯ</div>
+                    </div>
+                    <div class="dog-content">
+                        <div class="dog-number">#003</div>
+                        <h3>Макс</h3>
+                        <div class="dog-meta">
+                            <span class="meta-item">Немецкая овчарка</span>
+                            <span class="meta-item">♂ Самец</span>
+                            <span class="meta-item">4 года</span>
+                        </div>
+                        <p>Умный и послушный пёс, прошёл базовую дрессировку. Идеальный компаньон и надёжный друг семьи. Прекрасно ладит с детьми.</p>
+                        <div class="dog-time">В приюте: 6 месяцев</div>
+                    </div>
+                </div>
+
+                <div class="dog-card">
+                    <div class="dog-image">
+                        <img src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=600" alt="Белла - собака из приюта">
+                        <div class="size-badge">МАЛЕНЬКАЯ</div>
+                    </div>
+                    <div class="dog-content">
+                        <div class="dog-number">#004</div>
+                        <h3>Белла</h3>
+                        <div class="dog-meta">
+                            <span class="meta-item">Метис</span>
+                            <span class="meta-item">♀ Самка</span>
+                            <span class="meta-item">1 год</span>
+                        </div>
+                        <p>Милая и игривая малышка, полная энергии и любви. Идеально подойдёт для квартирного содержания. Отлично ладит с другими животными.</p>
+                        <div class="dog-time">В приюте: 3 месяца</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section" id="about">
+        <div class="about-container">
+            <h2>О приюте</h2>
+            <div class="about-text">
+                <p>Мы — команда волонтёров, для которых спасение бездомных собак стало делом жизни. Наш приют в деревне Пареклиссия под Лимассолом — это не просто место передержки, это дом, где каждая собака получает любовь и заботу.</p>
+                <p>Ежедневно мы кормим, лечим и социализируем наших подопечных, готовя их к встрече с новой семьёй. Мы верим, что каждая собака заслуживает второй шанс на счастливую жизнь.</p>
+                <p>Приют существует благодаря поддержке неравнодушных людей и компаний. Каждое пожертвование, каждый час волонтёрской работы приближает наших собак к их мечте — найти любящий дом.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="program-section" id="program">
+        <div class="program-container">
+            <h2>From Shelter to Home</h2>
+            <p class="program-subtitle">Благотворительная программа для волонтёров</p>
+            <div class="program-steps">
+                <div class="program-step">
+                    <div class="step-number">Шаг 01</div>
+                    <h3>Выберите собаку</h3>
+                    <p>Изучите каталог и возьмите под своё шефство одну или несколько собак. Станьте их временным наставником и другом на пути к новому дому.</p>
+                </div>
+                <div class="program-step">
+                    <div class="step-number">Шаг 02</div>
+                    <h3>Проводите время вместе</h3>
+                    <p>Приезжайте в приют 1-2 раза в неделю для прогулок, игр и социализации. Ваше общение помогает собакам адаптироваться к жизни в семье.</p>
+                </div>
+                <div class="program-step">
+                    <div class="step-number">Шаг 03</div>
+                    <h3>Расскажите их историю</h3>
+                    <p>Делитесь фотографиями и видео вашей подопечной собаки в социальных сетях. Рассказывайте о её характере, привычках и мечтах. Ваш голос поможет найти идеальную семью.</p>
+                </div>
+                <div class="program-step">
+                    <div class="step-number">Шаг 04</div>
+                    <h3>Помогите найти дом</h3>
+                    <p>Используйте свою сеть контактов, чтобы найти любящую семью для вашей собаки. Станьте связующим звеном между приютом и новыми хозяевами.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="help-section" id="help">
+        <div class="help-container">
+            <h2>Помощь</h2>
+            <div class="help-grid">
+                <div class="help-card">
+                    <h3>Корм для собак</h3>
+                    <p>Помогите обеспечить качественным питанием более 350 собак, которые нуждаются в ежедневном кормлении и сбалансированном рационе.</p>
+                    <a href="https://gogetfunding.com/williams-dog-shelter-dog-food-fundraiser-september-oktober-2025/" class="help-btn" target="_blank" rel="noopener">Помочь</a>
+                </div>
+                <div class="help-card">
+                    <h3>Ветеринарная помощь</h3>
+                    <p>Регулярные осмотры, прививки, лечение заболеваний и стерилизация требуют значительных средств для поддержания здоровья наших подопечных.</p>
+                    <a href="https://gogetfunding.com/dog-vet-fundraiser-september-oktober-2025-williams-dog-shelter/" class="help-btn" target="_blank" rel="noopener">Помочь</a>
+                </div>
+                <div class="help-card">
+                    <h3>Хозяйственные нужды</h3>
+                    <p>Содержание приюта, ремонт и строительство вольеров, коммунальные услуги и ежедневные операционные расходы.</p>
+                    <a href="https://gogetfunding.com/for-economic-activity-and-maintenance-of-a-dog-shelter-2025/" class="help-btn" target="_blank" rel="noopener">Помочь</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <div class="contact-container">
+            <h2>Контакты</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h4>Email</h4>
+                        <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="4c1b252020252d213f6228232b623f24292038293e790c2b212d2520622f2321">[email&#160;protected]</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <h4>Instagram</h4>
+                        <p><a href="https://www.instagram.com/williams_dog_shelter" target="_blank" rel="noopener" style="color: inherit; text-decoration: none;">@williams_dog_shelter</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <h4>Адрес</h4>
+                        <p>Пареклиссия, Лимассол, Кипр</p>
+                    </div>
+                </div>
+                <div>
+                    <h4 style="font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 0.85rem; color: #999; margin-bottom: 1rem;">Как добраться</h4>
+                    <div class="map-container">
+                        <iframe src="https://maps.app.goo.gl/mZJVbDre4E4p36mXA" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 William's Dog Shelter • williamsshelter.com
